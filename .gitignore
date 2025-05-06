@@ -1,0 +1,43 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.env
+*.env
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Output files (IMPORTANT!)
+output/
+Output/ # Case variations
+*.log
+
+# Generated media/results within output (explicitly ignore common types)
+output/**/*.gif
+output/**/*.png
+output/**/*.csv
+output/**/*.pth # Ignore checkpoints saved in output, keep main ones in models/
+
+# Data files (if accidentally placed here - data/ dir itself is kept for README)
+# data/**/*.png
+# data/**/*.tif
+# data/**/*.geojson
+
+# Model files (if NOT using Git LFS and storing externally)
+# models/**/*.pth
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS generated files
+.DS_Store
+Thumbs.db
